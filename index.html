@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PLAYBOI CARTLE</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>PLAYBOI CARTLE</h1>
+        <div class="start-game">
+            <button type="button" id="start-btn" class="start-game">Start</button>
+            <button type="button" id="start-new-btn" class="start-game">Start New Game</button>
+        </div>
+        <div id="game-area" class="hidden game-area">
+            <label for="text-input">Guess the Playboi Carti Song</label>
+            <input type="input" id="text-input">
+            <button type="button" id="show-results-btn" class="result-btn hidden">Show Results</button>
+            <table id="guess-table">
+                <tr id="legend">
+                    <td>Song</td>
+                    <td>Album</td>
+                    <td>Track No.</td>
+                    <td>Track Length</td>
+                    <td>Features</td>
+                </tr>
+            </table>
+        </div>
+        <div id="win-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <p id="win-msg" class="win-msg">statement here</p>
+                <button type="button" id="share-results-btn" class="share-btn">Share Results!</button>
+            </div>
+        </div>
+        <footer>PLAYBOI CARTLE in progress - inspired by YEEZLE at yeezle.xyz</footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
